@@ -499,4 +499,1078 @@
             justify-content: space-between;
             color: var(--gray);
             font-size: 0.9rem;
-            border-top: 1px
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+        
+        /* Technology Insights */
+        .tech-insights {
+            margin-bottom: 40px;
+        }
+        
+        .insights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .insight-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-left: 5px solid var(--secondary);
+        }
+        
+        .insight-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .insight-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--secondary), #0097a7);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .insight-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        
+        .insight-card p {
+            color: var(--gray);
+            margin-bottom: 20px;
+        }
+        
+        /* Latest News */
+        .latest-news {
+            margin-bottom: 40px;
+        }
+        
+        .latest-list {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .latest-item {
+            display: flex;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            transition: var(--transition);
+        }
+        
+        .latest-item:last-child {
+            border-bottom: none;
+        }
+        
+        .latest-item:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .latest-img {
+            width: 120px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        
+        .latest-content h4 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .sidebar-widget {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: var(--shadow);
+        }
+        
+        .widget-title {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--secondary);
+            color: var(--primary);
+        }
+        
+        .popular-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .popular-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .popular-number {
+            background-color: var(--primary);
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+        
+        .popular-list li:nth-child(1) .popular-number {
+            background-color: var(--accent);
+        }
+        
+        .popular-list li:nth-child(2) .popular-number {
+            background-color: var(--secondary);
+        }
+        
+        .category-list li {
+            margin-bottom: 12px;
+        }
+        
+        .category-list a {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 15px;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            transition: var(--transition);
+        }
+        
+        .category-list a:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .category-count {
+            background-color: #e9ecef;
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+        
+        .category-list a:hover .category-count {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        
+        /* Video Section */
+        .video-section {
+            margin: 50px 0;
+        }
+        
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+        
+        .video-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .video-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .video-thumbnail {
+            height: 180px;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .video-thumbnail::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(13, 71, 161, 0.7), rgba(0, 188, 212, 0.7));
+        }
+        
+        .video-play {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.9);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            z-index: 1;
+        }
+        
+        .video-content {
+            padding: 20px;
+        }
+        
+        .video-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        
+        /* Newsletter */
+        .newsletter {
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            color: white;
+            padding: 60px 0;
+            margin: 60px 0;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+        }
+        
+        .newsletter-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .newsletter h2 {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+        
+        .newsletter p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .newsletter-form {
+            display: flex;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .newsletter-form input {
+            flex: 1;
+            padding: 15px;
+            border: none;
+            border-radius: 6px 0 0 6px;
+            outline: none;
+            font-size: 1rem;
+        }
+        
+        .newsletter-form button {
+            border-radius: 0 6px 6px 0;
+            border: none;
+            padding: 0 25px;
+            font-weight: 600;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 60px 0 20px;
+            margin-top: 60px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: white;
+        }
+        
+        .footer-logo span {
+            color: var(--secondary);
+        }
+        
+        .footer-about p {
+            color: #bbb;
+            margin-bottom: 20px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 12px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: #2c387e;
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+        }
+        
+        .footer-links h3 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-links h3::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background-color: var(--secondary);
+            bottom: 0;
+            left: 0;
+        }
+        
+        .footer-links ul li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links ul li a {
+            color: #bbb;
+            transition: var(--transition);
+        }
+        
+        .footer-links ul li a:hover {
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+        
+        .contact-info-footer li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 15px;
+            color: #bbb;
+        }
+        
+        .contact-info-footer i {
+            color: var(--secondary);
+            margin-top: 4px;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #2c387e;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .featured-item.main {
+                flex-direction: column;
+            }
+            
+            .featured-item.main .featured-img,
+            .featured-item.main .featured-content {
+                width: 100%;
+            }
+            
+            .hero h1 {
+                font-size: 2.7rem;
+            }
+            
+            .video-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-tagline {
+                display: none;
+            }
+            
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: linear-gradient(90deg, var(--dark), var(--primary));
+                flex-direction: column;
+                box-shadow: var(--shadow);
+                z-index: 100;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .mobile-toggle {
+                display: block;
+            }
+            
+            .search-box {
+                display: none;
+            }
+            
+            .hero {
+                padding: 80px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2.3rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .featured-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .newsletter-form {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .newsletter-form input,
+            .newsletter-form button {
+                border-radius: 6px;
+                width: 100%;
+            }
+            
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.6rem;
+            }
+            
+            .featured-content h3 {
+                font-size: 1.3rem;
+            }
+            
+            .latest-item {
+                flex-direction: column;
+            }
+            
+            .latest-img {
+                width: 100%;
+                height: 150px;
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            
+            .logo {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+            
+            .logo-text h1 {
+                font-size: 1.8rem;
+            }
+            
+            .top-bar .container {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+            
+            .date-time {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <span><i class="fas fa-atom"></i> Portal Berita Teknologi & Energi Masa Depan</span>
+                <div class="date-time">
+                    <span id="current-date"></span>
+                    <span id="current-time"></span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-main">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h1>BOM HIDROGEN</h1>
+                            <p>Teknologi • Energi • Inovasi • Masa Depan</p>
+                        </div>
+                    </div>
+                    <div class="header-tagline">
+                        <i class="fas fa-quote-left"></i> Mengungkap Potensi Energi Terbarukan untuk Peradaban Berkelanjutan
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-nav">
+            <div class="container nav-container">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#" class="active">Beranda</a></li>
+                    <li><a href="#teknologi">Teknologi Hidrogen</a></li>
+                    <li><a href="#energi">Energi Terbarukan</a></li>
+                    <li><a href="#inovasi">Inovasi</a></li>
+                    <li><a href="#riset">Riset & Pengembangan</a></li>
+                    <li><a href="#industri">Industri</a></li>
+                    <li><a href="#video">Video</a></li>
+                </ul>
+                
+                <div class="nav-tools">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Cari berita teknologi...">
+                    </div>
+                    <div class="mobile-toggle" id="mobile-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Revolusi Energi Hidrogen: Masa Depan Berkelanjutan Dimulai di Sini</h1>
+                <p>Jelajahi perkembangan terkini teknologi hidrogen, energi bersih, dan inovasi yang akan mengubah wajah peradaban manusia menuju masa depan yang lebih hijau dan berkelanjutan.</p>
+                <div class="hero-buttons">
+                    <a href="#berita-utama" class="btn">Baca Berita Terbaru</a>
+                    <a href="#video" class="btn btn-outline">Tonton Video Teknologi</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breaking News -->
+    <section class="breaking-news">
+        <div class="container breaking-container">
+            <div class="breaking-label">
+                <i class="fas fa-bolt"></i> BERITA TERKINI
+            </div>
+            <div class="breaking-text">
+                <marquee>Peneliti Indonesia Kembangkan Teknologi Electrolyzer Efisiensi Tinggi • PLTS Terapung Terbesar di Asia Tenggara Akan Dibangun di Indonesia • Mobil Hidrogen Pertama di Indonesia Mulai Diuji Coba • Konsorsium Internasional Rilis Standar Keamanan Hydrogen Fuel Cell Terbaru</marquee>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="main-content">
+            <!-- Content Area -->
+            <div class="content-area">
+                <!-- Featured News -->
+                <div class="section-title" id="berita-utama">
+                    <h2>Berita Utama</h2>
+                </div>
+                
+                <div class="featured-news">
+                    <div class="featured-grid">
+                        <!-- Main Featured -->
+                        <div class="featured-item main">
+                            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Teknologi Hidrogen Hijau" class="featured-img">
+                            <div class="featured-content">
+                                <span class="tag tag-tech">TEKNOLOGI HIDROGEN</span>
+                                <span class="tag tag-breakthrough">BREAKTHROUGH</span>
+                                <h3>Reaktor Hidrogen Hijau Capai Efisiensi 95%, Potensi Ubah Industri Energi Global</h3>
+                                <p>Tim peneliti internasional berhasil mengembangkan reaktor elektrolisis dengan efisiensi konversi energi mencapai 95%, melampaui rekor sebelumnya. Teknologi ini menggunakan energi terbarukan untuk memproduksi hidrogen hijau dengan biaya lebih rendah.</p>
+                                <div class="news-meta">
+                                    <span><i class="far fa-clock"></i> 4 jam yang lalu</span>
+                                    <span><i class="far fa-eye"></i> 5.8k dilihat</span>
+                                    <span><i class="far fa-comment"></i> 124 komentar</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Featured 1 -->
+                        <div class="featured-item">
+                            <img src="https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Fuel Cell Technology" class="featured-img">
+                            <div class="featured-content">
+                                <span class="tag tag-energy">ENERGI BERSIH</span>
+                                <h3>Fuel Cell Generasi Terbaru Bisa Hasilkan Listrik 50% Lebih Efisien</h3>
+                                <p>Perusahaan teknologi energi meluncurkan sel bahan bakar hidrogen generasi terbaru dengan peningkatan efisiensi signifikan. Teknologi ini diharapkan dapat mempercepat adopsi kendaraan listrik berbahan bakar hidrogen.</p>
+                                <div class="news-meta">
+                                    <span><i class="far fa-clock"></i> 1 hari yang lalu</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Featured 2 -->
+                        <div class="featured-item">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Hydrogen Storage" class="featured-img">
+                            <div class="featured-content">
+                                <span class="tag tag-innovation">INOVASI MATERIAL</span>
+                                <h3>Material Baru Bisa Simpan Hidrogen 3x Lebih Banyak dengan Tekanan Rendah</h3>
+                                <p>Penemuan material metal-organic framework (MOF) baru mengatasi tantangan penyimpanan hidrogen yang selama ini menghambat pengembangan teknologi berbasis hidrogen.</p>
+                                <div class="news-meta">
+                                    <span><i class="far fa-clock"></i> 2 hari yang lalu</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Technology Insights -->
+                <div class="section-title" id="teknologi">
+                    <h2>Insights Teknologi</h2>
+                </div>
+                
+                <div class="tech-insights">
+                    <div class="insights-grid">
+                        <!-- Insight 1 -->
+                        <div class="insight-card">
+                            <div class="insight-icon">
+                                <i class="fas fa-water"></i>
+                            </div>
+                            <h3>Electrolysis: Proses Kunci Hidrogen Hijau</h3>
+                            <p>Teknologi elektrolisis menggunakan listrik dari sumber terbarukan untuk memisahkan molekul air menjadi hidrogen dan oksigen tanpa emisi karbon.</p>
+                            <a href="#" class="btn btn-outline">Pelajari Lebih Lanjut</a>
+                        </div>
+                        
+                        <!-- Insight 2 -->
+                        <div class="insight-card">
+                            <div class="insight-icon">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <h3>Mobil Hidrogen: Masa Depan Transportasi</h3>
+                            <p>Kendaraan fuel cell menggabungkan hidrogen dengan oksigen untuk menghasilkan listrik, dengan emisi tunggal berupa air murni.</p>
+                            <a href="#" class="btn btn-outline">Pelajari Lebih Lanjut</a>
+                        </div>
+                        
+                        <!-- Insight 3 -->
+                        <div class="insight-card">
+                            <div class="insight-icon">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <h3>Dekarbonisasi Industri Berat</h3>
+                            <p>Hidrogen hijau berpotensi menggantikan bahan bakar fosil dalam industri baja, semen, dan kimia yang sulit dialiri listrik.</p>
+                            <a href="#" class="btn btn-outline">Pelajari Lebih Lanjut</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Latest News -->
+                <div class="section-title">
+                    <h2>Berita Terbaru</h2>
+                </div>
+                
+                <div class="latest-news">
+                    <div class="latest-list">
+                        <div class="latest-item">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Berita terbaru" class="latest-img">
+                            <div class="latest-content">
+                                <h4>Indonesia Targetkan Produksi 1 Juta Ton Hidrogen Hijau per Tahun pada 2030</h4>
+                                <div class="news-meta">
+                                    <span><i class="far fa-clock"></i> 2 jam lalu</span>
+                                    <span class="tag tag-energy">KEBIJAKAN ENERGI</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="latest-item">
+                            <img src="https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Berita terbaru" class="latest-img">
+                            <div class="latest-content">
+                                <h4>Prototipe Pembangkit Listrik Tenaga Hidrogen Skala Kecil Diuji di NTT</h4>
+                                <div class="news-meta">
+                                    <span><i class="far fa-clock"></i> 5 jam lalu</span>
+                                    <span class="tag tag-innovation">INOVASI LOKAL</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="latest-item">
+                            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Berita terbaru" class="latest-img">
+                            <div class="latest-content">
+                                <h4>Kerjasama Indonesia-Jerman untuk Pengembangan Teknologi Penyimpanan Hidrogen</h4>
+                                <div class="news-meta">
+                                    <span><i class="far fa-clock"></i> 7 jam lalu</span>
+                                    <span class="tag tag-tech">KERJASAMA INTERNASIONAL</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="latest-item">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Berita terbaru" class="latest-img">
+                            <div class="latest-content">
+                                <h4>Startup Lokal Raih Pendanaan untuk Kembangkan Electrolyzer Murah</h4>
+                                <div class="news-meta">
+                                    <span><i class="far fa-clock"></i> 1 hari lalu</span>
+                                    <span class="tag tag-innovation">STARTUP</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Popular News -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Berita Populer</h3>
+                    <ul class="popular-list">
+                        <li>
+                            <div class="popular-number">1</div>
+                            <div>China Bangun Pabrik Hidrogen Hijau Terbesar di Dunia</div>
+                        </li>
+                        <li>
+                            <div class="popular-number">2</div>
+                            <div>BMW Umumkan Mobil Hidrogen Generasi Baru dengan Jarak 700km</div>
+                        </li>
+                        <li>
+                            <div class="popular-number">3</div>
+                            <div>Pertamina Mulai Produksi Hidrogen Hijau di Kilang Cilacap</div>
+                        </li>
+                        <li>
+                            <div class="popular-number">4</div>
+                            <div>Peneliti ITB Temukan Katalis Baru untuk Electrolysis Murah</div>
+                        </li>
+                        <li>
+                            <div class="popular-number">5</div>
+                            <div>UE Setujui Regulasi Baru untuk Ekosistem Hidrogen Terpadu</div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Categories -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Kategori Berita</h3>
+                    <ul class="category-list">
+                        <li>
+                            <a href="#">
+                                <span>Teknologi Hidrogen</span>
+                                <span class="category-count">86</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Energi Terbarukan</span>
+                                <span class="category-count">72</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Inovasi Material</span>
+                                <span class="category-count">45</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Kebijakan Energi</span>
+                                <span class="category-count">38</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Transportasi Hijau</span>
+                                <span class="category-count">53</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Riset & Pengembangan</span>
+                                <span class="category-count">67</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Upcoming Events -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Event Mendatang</h3>
+                    <div class="event-item">
+                        <div class="tag tag-innovation" style="margin-bottom: 15px; display: block; width: fit-content;">15-17 Mei 2024</div>
+                        <h4 style="margin-bottom: 10px; font-size: 1.1rem;">International Hydrogen Technology Conference</h4>
+                        <p style="color: var(--gray); font-size: 0.9rem;">Jakarta Convention Center</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Section -->
+    <section class="video-section" id="video">
+        <div class="container">
+            <div class="section-title">
+                <h2>Video Teknologi</h2>
+            </div>
+            
+            <div class="video-grid">
+                <!-- Video 1 -->
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="video-play">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-content">
+                        <span class="tag tag-tech">TEKNOLOGI</span>
+                        <h3>Cara Kerja Fuel Cell Hydrogen</h3>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> 15:32</span>
+                            <span><i class="far fa-eye"></i> 42k views</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Video 2 -->
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="video-play">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-content">
+                        <span class="tag tag-energy">ENERGI BERSIH</span>
+                        <h3>Pabrik Hidrogen Hijau Terbesar di Dunia</h3>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> 22:18</span>
+                            <span><i class="far fa-eye"></i> 38k views</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Video 3 -->
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="video-play">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-content">
+                        <span class="tag tag-innovation">INOVASI</span>
+                        <h3>Mobil Hidrogen vs Mobil Listrik Baterai</h3>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> 18:45</span>
+                            <span><i class="far fa-eye"></i> 56k views</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter" id="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Ikuti Perkembangan Teknologi Energi</h2>
+                <p>Berlangganan newsletter kami untuk mendapatkan update terbaru tentang perkembangan teknologi hidrogen, energi terbarukan, dan inovasi masa depan.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Masukkan alamat email Anda" required>
+                    <button type="submit" class="btn btn-energy">Berlangganan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">BOM <span>HIDROGEN</span></div>
+                    <p>Portal berita teknologi dan energi masa depan yang fokus pada perkembangan teknologi hidrogen, energi terbarukan, dan inovasi berkelanjutan untuk peradaban yang lebih hijau.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Kategori</h3>
+                    <ul>
+                        <li><a href="#teknologi">Teknologi Hidrogen</a></li>
+                        <li><a href="#energi">Energi Terbarukan</a></li>
+                        <li><a href="#inovasi">Inovasi Material</a></li>
+                        <li><a href="#riset">Riset & Pengembangan</a></li>
+                        <li><a href="#industri">Industri & Ekonomi</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Sumber Daya</h3>
+                    <ul>
+                        <li><a href="#">Glosarium Teknologi</a></li>
+                        <li><a href="#">Database Penelitian</a></li>
+                        <li><a href="#">Peta Proyek Hidrogen</a></li>
+                        <li><a href="#">Kalender Event</a></li>
+                        <li><a href="#">Publikasi & Laporan</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Kontak Kami</h3>
+                    <ul class="contact-info-footer">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Gedung Energi Terbarukan, Jl. Sudirman Kav. 52-53, Jakarta</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>(021) 1234-5678</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>redaksi@bomhidrogen.id</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Senin - Jumat: 09.00 - 17.00 WIB</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 BOM HIDROGEN. Hak Cipta Dilindungi. | Informasi untuk Masa Depan Berkelanjutan</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Fungsi untuk menampilkan tanggal dan waktu terkini
+        function updateDateTime() {
+            const now = new Date();
+            
+            // Format tanggal
+            const optionsDate = { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            };
+            const formattedDate = now.toLocaleDateString('id-ID', optionsDate);
+            document.getElementById('current-date').textContent = formattedDate;
+            
+            // Format waktu
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            const formattedTime = `${hours}:${minutes}:${seconds} WIB`;
+            document.getElementById('current-time').textContent = formattedTime;
+        }
+        
+        // Panggil fungsi pertama kali
+        updateDateTime();
+        
+        // Update setiap detik
+        setInterval(updateDateTime, 1000);
+        
+        // Toggle menu mobile
+        document.getElementById('mobile-toggle').addEventListener('click', function() {
+            document.getElementById('nav-links').classList.toggle('active');
+        });
+        
+        // Tutup menu mobile saat klik di luar
+        document.addEventListener('click', function(event) {
+            const navLinks = document.getElementById('nav-links');
+            const mobileToggle = document.getElementById('mobile-toggle');
+            
+            if (!navLinks.contains(event.target) && !mobileToggle.contains(event.target)) {
+                navLinks.classList.remove('active');
+            }
+        });
+        
+        // Smooth scroll untuk tombol
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Tutup menu mobile jika terbuka
+                    document.getElementById('nav-links').classList.remove('active');
+                }
+            });
+        });
+        
+        // Form newsletter
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            
+            if (email) {
+                alert('Terima kasih telah berlangganan newsletter BOM HIDROGEN! Kami akan mengirimkan update terbaru ke ' + email);
+                this.reset();
+            }
+        });
+    </script>
+</body>
+</html>
